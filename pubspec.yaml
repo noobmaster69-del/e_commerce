@@ -10,6 +10,7 @@ environment:
 
 #---------PACKAGES---------#
 dependencies:
+  get: ^4.6.6
   get_storage: ^2.1.1
 
   flutter:
@@ -17,18 +18,17 @@ dependencies:
       flutter
 
       # Utility Packages
-  http: ^1.2.1
+  http: 1.2.0
   intl: ^0.19.0
   logger: ^2.0.1
   url_launcher: ^6.1.12
+  smooth_page_indicator: ^1.1.0
 
 # Icons
 iconsax: ^0.0.8
 cupertino_icons: ^1.0.2
 
 # State management
-get: ^4.6.5
-get_storage: ^2.1.1
 
 # Product Specific
 
@@ -39,13 +39,13 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.1
-  flutter_native_splash: ^2.3.2
+  flutter_native_splash: ^2.3.11
 
 flutter:
   uses-material-design: true
 
   #----LOCAL ASSETS-----#
   assets:
-    - asset\logo\
-    - asset\images\
-    - asset\icons\
+    - asset/logo/
+    - asset/images/on_boarding_images/
+    - asset/icons/

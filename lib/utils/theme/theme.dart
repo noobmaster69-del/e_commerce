@@ -30,7 +30,7 @@ class EAppTheme {
     inputDecorationTheme: ETextFormFieldTheme.lightInputDecorationTheme,
   );
 
-  ///Light Theme
+  ///Dark Theme
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
@@ -38,7 +38,7 @@ class EAppTheme {
     primaryColor: Colors.blue,
     textTheme: ETextTheme.darkTextTheme,
     chipTheme: EchipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: Colors.black,
     appBarTheme: EAppbarTheme.darkAppBarTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheet,

@@ -64,12 +64,12 @@ class EHelperfunctions {
     return MediaQuery.of(context).size;
   }
 
-  static Size screenHeight(BuildContext context) {
-    return MediaQuery.of(context).size;
+  static double screenHeight(BuildContext context) {
+    return MediaQuery.of(context).size.height;
   }
 
-  static Size screenWidth(BuildContext context) {
-    return MediaQuery.of(context).size;
+  static double screenWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
   }
 
   static String getFormattedDate(DateTime date,
