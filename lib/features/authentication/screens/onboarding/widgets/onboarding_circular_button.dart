@@ -1,3 +1,4 @@
+import 'package:e_commerce/features/authentication/controller/onboarding_controller.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:e_commerce/utils/devices/device_utility.dart';
@@ -16,7 +17,7 @@ class OnBoardingCircularButton extends StatelessWidget {
       right: ESizes.defaultSpace,
       bottom: EDeviceutils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () => OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
             backgroundColor: dark ? EColors.primary : Colors.black),
