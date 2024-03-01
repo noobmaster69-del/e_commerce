@@ -1,8 +1,12 @@
-import 'package:e_commerce/utils/constants/sizes.dart';
+import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_circular_button.dart';
+import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:e_commerce/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+
 import 'package:e_commerce/utils/constants/text_strings.dart';
+
 import 'package:flutter/material.dart';
 import 'package:e_commerce/utils/constants/image_string.dart';
-import 'package:e_commerce/utils/helpers/helper_function.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -31,53 +35,16 @@ class OnBoardingScreen extends StatelessWidget {
                 subTitles: Etexts.onBoardingSubTitle3,
               ),
             ],
-          )
+          ),
 
           //Skip Button
+          const OnBoardingSkip(),
 
           //Dot Navigation SmoothPage Indicator
+          const OnBoardingDotNavigation(),
 
           //Circular Button
-        ],
-      ),
-    );
-  }
-}
-
-class OnBoardingPage extends StatelessWidget {
-  const OnBoardingPage({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.subTitles,
-  });
-
-  final String image, title, subTitles;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(ESizes.defaultSpace),
-      child: Column(
-        children: [
-          Image(
-            width: EHelperfunctions.screenWidth(context) * 0.8,
-            height: EHelperfunctions.screenHeight(context) * 0.6,
-            image: AssetImage(image),
-          ),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: ESizes.spaceBtwItems,
-          ),
-          Text(
-            subTitles,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          )
+          const OnBoardingCircularButton()
         ],
       ),
     );
