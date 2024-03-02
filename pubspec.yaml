@@ -12,6 +12,7 @@ environment:
 dependencies:
   get: ^4.6.6
   get_storage: ^2.1.1
+  iconsax: ^0.0.8
 
   flutter:
     sdk:
@@ -25,7 +26,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
 
 # Icons
-iconsax: ^0.0.8
+
 cupertino_icons: ^1.0.2
 
 # State management

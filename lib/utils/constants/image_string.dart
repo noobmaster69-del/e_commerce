@@ -2,8 +2,8 @@
 
 class EImages {
   //--App Logos
-  static const String darkApplogo = "";
-  static const String lightApplogo = "";
+  static const String darkApplogo = "Dark App Logo";
+  static const String lightApplogo = "Light App Logo";
 
   //-- Social Logos
   static const String google = "";
