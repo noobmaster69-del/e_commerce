@@ -29,7 +29,8 @@ class SignupScreen extends StatelessWidget {
               ),
 
               ///Form
-              ESignupForm(dark: dark),
+              const ESignupForm(),
+              const SizedBox(height: ESizes.spaceBtwSections),
               //Divider
               FormDivider(dividerText: Etexts.signUpW.capitalize!),
 
