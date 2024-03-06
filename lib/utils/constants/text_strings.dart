@@ -20,6 +20,8 @@ class Etexts {
   static const String signIn = "Sign In";
   static const String createAcc = "Create an Account";
   static const String signInW = "Or Sign in With";
+  static const String signUpW = "Or Sign up With";
+
   static const String iAgreeto = "I Agree To";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of Use";
