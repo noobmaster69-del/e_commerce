@@ -7,7 +7,7 @@ class Etexts {
   static const String appName = "Tindahan";
   static const String eContinue = "Continue";
 
-//Authentication Text
+//Authentication form Text
   static const String firstName = "First Name:";
   static const String lastName = "Last Name:";
   static const String eMail = "E-Mail";
@@ -56,4 +56,22 @@ class Etexts {
 
   //--Sign up Title
   static const String signUpTitle = "Lets Create your Account";
+
+  //--Authentication Heading text
+  static const String loginTitle = "Welcome Back";
+  static const String loginSubTitle =
+      "Discover Limitless Choices and Unmatched Convenience";
+  static const String forgetPasswordTitle = " Forget Password";
+  static const String forgetPasswordSubtitle =
+      "Don't worry sometimes people can forget too, enter your email and we will send you a link";
+  static const String changeYourPasswordTitle = "Password Reset Email sent";
+  static const String changeYourPasswordSubTitle =
+      "Your Account security is our top priority! We've sent you a secure link to Safely Change Your Password and Keep Your Account Protected.";
+  static const String confirmEmail = "Verify your Email Address!";
+  static const String confirmEmailSubtitle =
+      "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers";
+  static const String yourAccountCreatedTitle =
+      "Your Account has been succesfully created!";
+  static const String yourAccountCreatedSubtitle =
+      "Welcom to your Ultimate Shopping Destination: Your Account has been created.Unleash the Joy of Seamless Online Shopping!";
 }
