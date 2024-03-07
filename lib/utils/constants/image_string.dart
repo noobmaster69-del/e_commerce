@@ -2,18 +2,18 @@
 
 class EImages {
   //--App Logos
-  static const String darkApplogo = "Dark App Logo";
-  static const String lightApplogo = "Light App Logo";
+  static const String darkApplogo = "asset/logo/pdark.png";
+  static const String lightApplogo = "asset/logo/plight.png";
 
   //-- Social Logos
-  static const String google = "";
-  static const String facebook = "";
+  static const String google = "asset/logo/google-icon.png";
+  static const String facebook = "asset/logo/facebook-icon.png";
 
 //Onboarding Images
   static const String onBoardingImage1 =
-      'asset/images/on_boarding_images/sammy-line-sailor-on-mast-looking-through-telescope.gif';
+      'asset/images/on_boarding_images/sammy-line-searching.gif';
   static const String onBoardingImage2 =
-      'asset/images/on_boarding_images/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif';
+      'asset/images/on_boarding_images/sammy-line-shopping.gif';
   static const String onBoardingImage3 =
-      'asset/images/on_boarding_images/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif';
+      'asset/images/on_boarding_images/sammy-line-delivery.gif';
 }
