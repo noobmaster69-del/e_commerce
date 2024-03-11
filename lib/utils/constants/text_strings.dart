@@ -61,7 +61,7 @@ class Etexts {
   static const String loginTitle = "Welcome Back";
   static const String loginSubTitle =
       "Discover Limitless Choices and Unmatched Convenience";
-  static const String forgetPasswordTitle = " Forget Password";
+  static const String forgetPasswordTitle = " Forgot Password";
   static const String forgetPasswordSubtitle =
       "Don't worry sometimes people can forget too, enter your email and we will send you a link";
   static const String changeYourPasswordTitle = "Password Reset Email sent";
