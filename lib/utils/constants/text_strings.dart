@@ -43,7 +43,7 @@ class Etexts {
 
   //--Home
   static const String homeAppBarTitle = "Good day for shopping";
-  static const String homeAppBarSubTitle = "";
+  static const String homeAppBarSubTitle = "Random Person";
 
   //--Login Text
 
