@@ -1,8 +1,9 @@
-import 'package:e_commerce/common/widgets/appbar/appbar.dart';
+import 'package:e_commerce/common/widgets/Texts/section_heading.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/container/primary_header_container.dart';
-import 'package:e_commerce/utils/constants/colors.dart';
-import 'package:e_commerce/utils/constants/text_strings.dart';
-
+import 'package:e_commerce/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:e_commerce/features/authentication/screens/login/home/widgets/home_app_bar.dart';
+import 'package:e_commerce/features/authentication/screens/login/home/widgets/home_categories.dart';
+import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -19,27 +20,36 @@ class HomeScreen extends StatelessWidget {
             PrimaryHeaderWidget(
               child: Column(
                 children: [
-                  EAppBar(
-                    title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                  //Appbar
+                  EHomeAppBar(),
+                  SizedBox(height: ESizes.spaceBtwSections),
+
+                  //Searchbar
+                  ESearchContainer(
+                    text: 'Search in Store',
+                    icon: (Iconsax.search_normal),
+                  ),
+                  SizedBox(
+                    height: ESizes.spaceBtwSections,
+                  ),
+
+                  //Heading & Categories
+                  Padding(
+                    padding: EdgeInsets.only(left: ESizes.defaultSpace),
+                    child: Column(
                       children: [
-                        Text(Etexts.homeAppBarTitle,
-                            style: Theme.of(context)
-                                .textTheme
-                                .labelMedium!
-                                .apply(color: EColors.grey)),
-                        Text(Etexts.homeAppBarSubTitle,
-                            style: Theme.of(context)
-                                .textTheme
-                                .headlineSmall!
-                                .apply(color: EColors.white)),
+                        //Heading
+                        ESectionHeading(
+                          title: 'Popular Categories',
+                          showActionButton: false,
+                          textColor: Colors.white,
+                        ),
+                        SizedBox(height: ESizes.spaceBtwItems),
+
+                        //Categories
+                        EHomeCategories(),
                       ],
                     ),
-                    actions: [
-                      IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Iconsax.shopping_bag))
-                    ],
                   ),
                 ],
               ),
