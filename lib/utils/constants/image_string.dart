@@ -49,4 +49,9 @@ class EImages {
       "asset/icons/categories/icons8-sparkling-diamond-64.png";
   static const String electronicsIcon =
       "asset/icons/categories/icons8-smartphone-64.png";
+
+  //Banners
+  static const String promoBanner1 = "asset/images/banners/banner_1.jpg";
+  static const String promoBanner2 = "asset/images/banners/banner_2.jpg";
+  static const String promoBanner3 = "asset/images/banners/banner_3.jpg";
 }
