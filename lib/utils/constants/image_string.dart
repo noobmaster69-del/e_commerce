@@ -54,4 +54,9 @@ class EImages {
   static const String promoBanner1 = "asset/images/banners/banner_1.jpg";
   static const String promoBanner2 = "asset/images/banners/banner_2.jpg";
   static const String promoBanner3 = "asset/images/banners/banner_3.jpg";
+  static const String promoBanner4 = "asset/images/banners/banner_4.jpg";
+  static const String promoBanner5 = "asset/images/banners/banner_5.jpg";
+  static const String promoBanner6 = "asset/images/banners/banner_6.jpg";
+  static const String promoBanner7 = "asset/images/banners/banner_7.jpg";
+  static const String promoBanner8 = "asset/images/banners/banner_8.jpg";
 }
