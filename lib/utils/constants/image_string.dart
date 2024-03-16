@@ -59,4 +59,18 @@ class EImages {
   static const String promoBanner6 = "asset/images/banners/banner_6.jpg";
   static const String promoBanner7 = "asset/images/banners/banner_7.jpg";
   static const String promoBanner8 = "asset/images/banners/banner_8.jpg";
+
+  //Product Images
+  static const String productImage1 = "asset/images/products/acer_laptop_1.png";
+  static const String productImage2 = "asset/images/products/acer_laptop_2.png";
+  static const String productImage3 = "asset/images/products/acer_laptop_3.png";
+  static const String productImage4 = "asset/images/products/acer_laptop_4.png";
+  static const String productImage5 =
+      "asset/images/products/acer_laptop_var_1.png";
+  static const String productImage6 =
+      "asset/images/products/acer_laptop_var_2.png";
+  static const String productImage7 =
+      "asset/images/products/acer_laptop_var_3.png";
+  static const String productImage8 =
+      "asset/images/products/acer_laptop_var_4.png";
 }

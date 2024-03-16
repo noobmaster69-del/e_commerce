@@ -37,8 +37,10 @@ class ERoundedImage extends StatelessWidget {
         width: width,
         height: height,
         padding: padding,
-        decoration:
-            BoxDecoration(borderRadius: BorderRadius.circular(borderRadius)),
+        decoration: BoxDecoration(
+            border: border,
+            color: backgroundcolor,
+            borderRadius: BorderRadius.circular(borderRadius)),
         child: ClipRRect(
             borderRadius: applyImageRadius
                 ? BorderRadius.circular(borderRadius)

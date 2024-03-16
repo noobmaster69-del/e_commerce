@@ -1,13 +1,11 @@
 import 'package:e_commerce/common/widgets/Texts/section_heading.dart';
-
 import 'package:e_commerce/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/container/search_container.dart';
-
 import 'package:e_commerce/features/authentication/screens/login/home/widgets/home_app_bar.dart';
 import 'package:e_commerce/features/authentication/screens/login/home/widgets/home_categories.dart';
+import 'package:e_commerce/features/authentication/screens/login/home/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce/features/authentication/screens/login/home/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/image_string.dart';
-
 import 'package:e_commerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -62,12 +60,21 @@ class HomeScreen extends StatelessWidget {
             //Body
             Padding(
               padding: EdgeInsets.all(ESizes.defaultSpace),
-              child: EPromoSlider(banners: [
-                EImages.promoBanner7,
-                EImages.promoBanner2,
-                EImages.promoBanner3,
-              ]),
-            )
+              //Promo Slider
+              child: Column(
+                children: [
+                  EPromoSlider(banners: [
+                    EImages.promoBanner7,
+                    EImages.promoBanner2,
+                    EImages.promoBanner3
+                  ]),
+                  SizedBox(height: ESizes.spaceBtwSections),
+
+                  //Popular Products
+                  EProductCardVertical(),
+                ],
+              ),
+            ),
           ],
         ),
       ),

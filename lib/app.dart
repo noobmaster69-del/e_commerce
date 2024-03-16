@@ -7,7 +7,7 @@ void main() {
   runApp(const App());
 }
 
-///Use this class to setup themes, Inital Bindings, ETC.
+///Use this class to setup themes, Initial Bindings, ETC.
 
 class App extends StatelessWidget {
   const App({super.key});
