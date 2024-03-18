@@ -15,7 +15,7 @@ class EColors {
 
   //Background Color
   static const Color light = Color(0xfff6f6f6);
-  static const Color dark = Color(0xff6c757d);
+  static const Color dark = Color(0xff232323);
   static const Color primaryBackground = Color(0xfff3f5ff);
 
   //Background Container Colors

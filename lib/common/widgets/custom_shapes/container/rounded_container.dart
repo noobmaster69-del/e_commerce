@@ -34,9 +34,11 @@ class ERoundedContainer extends StatelessWidget {
       padding: padding,
       margin: margin,
       decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(radius),
-          border: showBorder ? Border.all(color: borderColor) : null),
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(radius),
+        border: showBorder ? Border.all(color: borderColor) : null,
+      ),
+      child: child,
     );
   }
 }
