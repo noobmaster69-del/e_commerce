@@ -2,6 +2,7 @@ import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/common/widgets/products.cart/cart_menu_icon.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/text_strings.dart';
+import 'package:e_commerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class EHomeAppBar extends StatelessWidget {
@@ -19,7 +20,7 @@ class EHomeAppBar extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .labelMedium!
-                  .apply(color: EColors.grey)),
+                  .apply(color: EColors.white)),
           Text(Etexts.homeAppBarSubTitle,
               style: Theme.of(context)
                   .textTheme
@@ -30,7 +31,9 @@ class EHomeAppBar extends StatelessWidget {
       actions: [
         ECartCounterIcon(
           onPressed: () {},
-          iconColor: EColors.white,
+          iconColor: EHelperfunctions.isDarkMode(context)
+              ? EColors.black
+              : EColors.white,
         ),
       ],
     );
