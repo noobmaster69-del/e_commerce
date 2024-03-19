@@ -1,4 +1,4 @@
-import 'package:e_commerce/features/authentication/screens/login/home/widgets/Image_text/vertical_image_text.dart';
+import 'package:e_commerce/features/shop/screens/home/widgets/Image_text/vertical_image_text.dart';
 import 'package:e_commerce/utils/constants/image_string.dart';
 import 'package:flutter/material.dart';
 

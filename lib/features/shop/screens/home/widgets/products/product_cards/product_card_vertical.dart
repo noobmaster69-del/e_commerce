@@ -3,7 +3,7 @@ import 'package:e_commerce/common/widgets/Texts/product_title.dart';
 import 'package:e_commerce/common/widgets/custom_shapes/container/rounded_container.dart';
 import 'package:e_commerce/common/widgets/icons/e_circular_container.dart';
 import 'package:e_commerce/common/widgets/images/e_rounded_images.dart';
-import 'package:e_commerce/features/authentication/screens/login/home/widgets/products/product_text/product_price_text.dart';
+import 'package:e_commerce/features/shop/screens/home/widgets/products/product_text/product_price_text.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_string.dart';
 import 'package:e_commerce/utils/constants/sizes.dart';
@@ -91,42 +91,45 @@ class EProductCardVertical extends StatelessWidget {
                         style: Theme.of(context).textTheme.labelMedium,
                       ),
                       const SizedBox(width: ESizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: EColors.primary,
-                        size: ESizes.iconxs,
-                      )
+                      const Icon(Iconsax.verify5,
+                          color: EColors.primary, size: ESizes.iconxs)
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //Price
-                      const EProductPriceText(price: '35.0'),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: EColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(ESizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(ESizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: ESizes.iconlg * 1.2,
-                          height: ESizes.lg * 1.2,
-                          child: Center(
-                            child: Icon(
-                              Iconsax.add,
-                              color: EColors.white,
-                            ),
-                          ),
-                        ),
-                      )
-                    ],
-                  )
                 ],
               ),
+            ),
+            // Add spacer () here to keep the height of each Box same in case 1 or 2 Lines of heading
+            const Spacer(),
+
+            //Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Price
+                const Padding(
+                  padding: EdgeInsets.only(left: ESizes.sm),
+                  child: EProductPriceText(price: '35.0'),
+                ),
+                Container(
+                  decoration: const BoxDecoration(
+                    color: EColors.dark,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(ESizes.cardRadiusMd),
+                        bottomRight:
+                            Radius.circular(ESizes.productImageRadius)),
+                  ),
+                  child: const SizedBox(
+                    width: ESizes.iconlg * 1.2,
+                    height: ESizes.lg * 1.2,
+                    child: Center(
+                      child: Icon(
+                        Iconsax.add,
+                        color: EColors.white,
+                      ),
+                    ),
+                  ),
+                )
+              ],
             )
           ],
         ),
